@@ -933,10 +933,8 @@ Ventcamp = {
                     $block.waypoint(function (direction) {
                         if ( direction == 'down' ) {
                             enterHandler( this.element, direction );
-                        } else {
-                            leaveHandler( this.element, direction );
                         }
-                    }, { offset: $('.header.fixed .header-wrapper').outerHeight() });
+                    }, { offset: $('.header').height() });
 
                     $block.waypoint(function (direction) {
                         if ( direction == 'down' ) {

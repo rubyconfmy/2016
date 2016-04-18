@@ -1,632 +1,550 @@
-<!doctype html>
-<html lang="en">
-<head>
+---
+layout: homepage
+---
 
-  <meta charset="utf-8">
-  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>Ruby (Un)Conference KL 2016</title>
+<div class="preloader-mask">
+  <div class="preloader"></div>
+</div>
 
-  <meta name="description" content="PSD to HTML5+CSS3 conversion.">
-  <meta name="keywords" content="PSD, HTML5, CSS3">
-  <meta name="author" content="Jimmy Ngu">
+<section id="hero" class="hero-section bg1 bg-cover window-height light-text">
+  {% include social-navs.html %}
+  
+  <div class="heading-block centered-block align-center">
+    <div class="container">
+      <h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>13.aug 2016 <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Makespace, Quill City Mall</h5>
+      <h1 class="extra-heading">RubyConf KL</h1>
 
-  <link rel="shortcut icon" href="assets/img/favicon.ico">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+      <!-- Countdown start -->
+      <div class="row counters-wrapper countdown">
+        <div class="col-sm-3">
+          <div class="counter-block counter-block-no-border counter-block-white has-separator">
+            <div class="counter-box">
+              <div class="counter-content">
+                <span class="count">{dnn}</span>
 
-  <link rel="stylesheet" type="text/css" href="assets/css/custom-animations.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+                <p class="title">days</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!--[if lt IE 9]>
-  <script src="assets/js/html5shiv.js"></script>
-  <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
-</head>
+        <div class="col-sm-3">
+          <div class="counter-block counter-block-no-border counter-block-white has-separator">
+            <div class="counter-box">
+              <div class="counter-content">
+                <span class="count">{hnn}</span>
 
-<body>
-  <div class="preloader-mask">
-    <div class="preloader"></div>
+                <p class="title">hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="counter-block counter-block-no-border counter-block-white has-separator">
+            <div class="counter-box">
+              <div class="counter-content">
+                <span class="count">{mnn}</span>
+
+                <p class="title">minutes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="counter-block counter-block-no-border counter-block-white">
+            <div class="counter-box">
+              <div class="counter-content">
+                <span class="count">{snn}</span>
+
+                <p class="title">seconds</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="btns-container">
+        <a href="#tickets" class="btn btn-md" data-modal-link="email-ticket">GET TICKETS</a>
+      </div>
+
+      <!-- countdown end -->
+
+    </div>
+  </div>
+</section>
+
+{% include homepage-header.html %}
+
+<section id="about" class="section align-center">
+  <div class="container">
+    <div class="col-sm-3 align-center">
+      <span class="icon section-icon icon-multimedia-12"></span>
+    </div>
+
+    <div class="col-sm-9 align-left">
+      <h6>About Event</h6>
+      <p>
+        Our very own, very first, homegrown Ruby Conference.
+      </p>
+      <p>
+        <span class="highlight">RubyConf KL</span> is a single day, weekend conference held by the Ruby Community in the Kuala Lumpur area.
+        This event is targeted for the local tech community, and we welcome anyone from hardcode Ruby-ists to technology enthusiasts.
+      </p>
+      <p>
+        Expect awesome content, friendly community members and a wonderful time of networking.
+      </p>
+      <p>So yeah ... it's like <a href="http://rubybrigade.my" target="_blank">Ruby Tuesdays</a> on steriods :D</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="counters" class="section align-center overlay bg-cover light-text">
+  <div class="container">
+
+    <div class="row counters-wrapper">
+      <div class="col-sm-4">
+        <div class="counter-block counter-block-no-border">
+          <div class="counter-box">
+            <div class="counter-content">
+              <span class="count" data-from="0" data-to="14">0</span>
+
+              <p class="title">speakers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="counter-block counter-block-no-border">
+          <div class="counter-box">
+            <div class="counter-content">
+              <span class="count" data-from="0" data-to="2">0</span>
+
+              <p class="title">tracks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="counter-block counter-block-no-border">
+          <div class="counter-box">
+            <div class="counter-content">
+              <span class="count" data-from="0" data-to="150">0</span>
+
+              <p class="title">tickets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="speakers" class="section align-center">
+  <div class="container">
+    <span class="icon section-icon icon-faces-users-04"></span>
+    <h3>Speakers</h3>
+    <p class="text-alt">Meet our <span class="highlight">speakers</span></p>
+    <br />
+    <br />
+
+    <p>We are currently looking for speakers. Call for proposal ends at <span class="highlight">15th June 2016</span>.</p>
+
   </div>
 
-  <section id="hero" class="hero-section bg1 bg-cover window-height light-text">
-    <ul class="socials-nav">
-      <li class="socials-nav-item"><a href="https://twitter.com/klxrb"><span class="fa fa-twitter"></span></a></li>
-      <li class="socials-nav-item"><a href="https://facebook.com/groups/klxrb"><span class="fa fa-facebook"></span></a></li>
-      <li class="socials-nav-item"><a href="https://github.com/rubyconfmy"><span class="fa fa-github"></span></a></li>
-    </ul>
-    <div class="heading-block centered-block align-center">
-      <div class="container">
-        <h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>13.aug 2016 <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Makespace, Quill City Mall</h5>
-        <h1 class="extra-heading">Ruby UnConf KL</h1>
+  <div class="col-sm-12 align-center">
+    <a href="/call-for-proposal" target="_blank" class="btn btn-outline-clr btn-md">BE A SPEAKER</a>
+  </div>
+</section>
 
-        <!-- Countdown start -->
-        <div class="row counters-wrapper countdown">
-          <div class="col-sm-3">
-            <div class="counter-block counter-block-no-border counter-block-white has-separator">
-              <div class="counter-box">
-                <div class="counter-content">
-                  <span class="count">{dnn}</span>
+<section id="schedule" class="section schedule-section align-center">
+  <div class="container">
+    <span class="icon section-icon icon-office-21"></span>
+    <h3>Schedule</h3>
+    <br />
+    <br />
 
-                  <p class="title">days</p>
-                </div>
+    <div class="col-md-10 col-md-offset-1">
+
+      <!-- Schedule start -->
+      <div class="row schedule schedule-light">
+
+        <!-- Navigation by day start -->
+        <ul class="nav nav-schedule">
+          <li class="active"><a href="#track1" data-toggle="tab">Track #1</a><div class="arrow"></div></li>
+          <li><a href="#track2" data-toggle="tab">Track #2</a><div class="arrow"></div></li>
+        </ul>
+        <!-- Navigation by day end -->
+
+        <!-- First level content start -->
+        <div class="tab-content">
+
+          <!-- Track 1 content start -->
+          <div id="track1" class="tab-pane fade active in">
+
+            <!-- Accordion start -->
+            <div class="panel-group" id="track1_timeline">
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time1" class="schedule-item-toggle">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:00 AM - 9:30 AM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Registration <i class="icon icon-arrows-06"></i></h6>
+                </a>
               </div>
-            </div>
-          </div>
+              <!-- Lecture end -->
 
-          <div class="col-sm-3">
-            <div class="counter-block counter-block-no-border counter-block-white has-separator">
-              <div class="counter-box">
-                <div class="counter-content">
-                  <span class="count">{hnn}</span>
-
-                  <p class="title">hours</p>
-                </div>
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time2" class="schedule-item-toggle">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:30 AM - 10:00 AM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Introduction & Keynote <i class="icon icon-arrows-06"></i></h6>
+                </a>
               </div>
-            </div>
-          </div>
+              <!-- Lecture end -->
 
-          <div class="col-sm-3">
-            <div class="counter-block counter-block-no-border counter-block-white has-separator">
-              <div class="counter-box">
-                <div class="counter-content">
-                  <span class="count">{mnn}</span>
-
-                  <p class="title">minutes</p>
-                </div>
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time3" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 11:00 AM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
               </div>
-            </div>
-          </div>
+              <!-- Lecture end -->
 
-          <div class="col-sm-3">
-            <div class="counter-block counter-block-no-border counter-block-white">
-              <div class="counter-box">
-                <div class="counter-content">
-                  <span class="count">{snn}</span>
-
-                  <p class="title">seconds</p>
-                </div>
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time4" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>11:00 AM - 12:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
               </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time5" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>12:00 PM - 1:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time6" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>1:00 PM - 2:00 PM</strong>
+                  <div class="lecture-icon-wrapper">
+                    <span class="fa fa-cutlery"></span>
+                  </div>
+                  <h6 class="title">Lunchtime<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>2:00 PM - 3:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>3:00 PM - 4:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>4:00 PM - 5:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>5:00 PM - 6:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
             </div>
+            <!-- Accordion end -->
+
           </div>
+          <!-- Track 1 content end -->
+
+          <!-- Track 2 content start -->
+          <div id="track2" class="tab-pane fade in">
+
+            <!-- Accordion start -->
+            <div class="panel-group" id="track2_timeline">
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time1" class="schedule-item-toggle">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:00 AM - 9:30 AM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Registration <i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time2" class="schedule-item-toggle">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:30 AM - 10:00 AM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Introduction & Keynote <i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time3" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 11:00 AM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time4" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>11:00 AM - 12:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time5" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>12:00 PM - 1:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time6" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>1:00 PM - 2:00 PM</strong>
+                  <div class="lecture-icon-wrapper">
+                    <span class="fa fa-cutlery"></span>
+                  </div>
+                  <h6 class="title">Lunchtime<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>2:00 PM - 3:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>3:00 PM - 4:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>4:00 PM - 5:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>5:00 PM - 6:00 PM</strong>
+                  <div class="lecture-icon-wrapper"></div>
+                  <h6 class="title">Presentation / Workshop<i class="icon icon-arrows-06"></i></h6>
+                </a>
+              </div>
+              <!-- Lecture end -->
+
+            </div>
+            <!-- Accordion end -->
+
+          </div>
+          <!-- Track 2 content end -->
 
         </div>
-
-        <div class="btns-container">
-          <a href="#tickets" class="btn btn-md" data-modal-link="email-ticket">GET TICKETS</a>
-        </div>
-
-        <!-- countdown end -->
+        <!-- First level content end -->
 
       </div>
-    </div>
-  </section>
-
-  <header class="header header-black">
-    <div class="header-wrapper">
-      <div class="container">
-        <div class="col-sm-2 col-xs-12 navigation-header">
-          <a href="#" class="logo">
-            <img src="assets/img/rubyconfmy_logo.png" alt="RubyConfMY" width="119" height="17" class="retina-hide">
-            <img src="assets/img/rubyconfmy_logo@2x.png" alt="RubyConfMY" width="119" height="17" class="retina-show">
-          </a>
-          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div class="col-sm-10 col-xs-12 navigation-container">
-          <div id="navigation" class="navbar-collapse collapse">
-            <ul class="navigation-list pull-left light-text">
-              <li class="navigation-item"><a href="/#speakers" class="navigation-link">Speakers</a></li>
-              <li class="navigation-item"><a href="/#schedule" class="navigation-link">Schedule</a></li>
-              <li class="navigation-item"><a href="/#tickets" class="navigation-link">Tickets</a></li>
-              <li class="navigation-item"><a href="/#code-of-conduct" class="navigation-link">Code of Conduct</a></li>
-              <li class="navigation-item"><a href="/#sponsors" class="navigation-link">Sponsors</a></li>
-              <li class="navigation-item"><a href="/#location" class="navigation-link">Location</a></li>
-            </ul>
-
-            <a href="#tickets" class="pull-right buy-btn">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section id="counters" class="section align-center overlay bg-cover light-text">
-    <div class="container">
-
-      <div class="row counters-wrapper">
-        <div class="col-sm-4">
-          <div class="counter-block counter-block-no-border">
-            <div class="counter-box">
-              <div class="counter-content">
-                <span class="count" data-from="0" data-to="14">0</span>
-
-                <p class="title">speakers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="counter-block counter-block-no-border">
-            <div class="counter-box">
-              <div class="counter-content">
-                <span class="count" data-from="0" data-to="2">0</span>
-
-                <p class="title">tracks</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="counter-block counter-block-no-border">
-            <div class="counter-box">
-              <div class="counter-content">
-                <span class="count" data-from="0" data-to="150">0</span>
-
-                <p class="title">tickets</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <section id="speakers" class="section align-center">
-    <div class="container">
-      <span class="icon section-icon icon-faces-users-04"></span>
-      <h3>Speakers</h3>
-      <p class="text-alt">Meet our <span class="highlight">speakers</span></p>
-      <br />
-      <br />
+      <!-- Schedule end -->
 
     </div>
 
-    <div class="col-sm-12 align-center">
-      <a href="call-for-proposal.html" target="_blank" class="btn btn-outline-clr btn-md">BE A SPEAKER</a>
-    </div>
-  </section>
+  </div>
 
-  <section id="schedule" class="section schedule-section align-center">
-    <div class="container">
-      <span class="icon section-icon icon-office-21"></span>
-      <h3>Schedule</h3>
-      <br />
-      <br />
+</section>
 
-      <div class="col-md-10 col-md-offset-1">
 
-        <!-- Schedule start -->
-        <div class="row schedule schedule-light">
+<section id="tickets" class="section align-center">
+  <div class="container">
+    <span class="icon section-icon icon-shopping-04"></span>
+    <h3>Tickets</h3>
+    <p class="text-alt">Get yours while they're still <span class="highlight">available</span></p>
+    <br/>
+    <br/>
 
-          <!-- Navigation by day start -->
-          <ul class="nav nav-schedule">
-            <li class="active"><a href="#track1" data-toggle="tab">Track #1</a></li>
-            <li><a href="#track2" data-toggle="tab">Track #2</a></li>
-          </ul>
-          <!-- Navigation by day end -->
-
-          <!-- First level content start -->
-          <div class="tab-content">
-
-            <!-- Track 1 content start -->
-            <div id="track1" class="tab-pane fade active in">
-
-              <!-- Accordion start -->
-              <div class="panel-group" id="track1_timeline">
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time1" class="schedule-item-toggle">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>9:00 AM - 9:30 AM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Registration <i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time2" class="schedule-item-toggle">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>9:30 AM - 10:00 AM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Introduction & Keynote <i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time3" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 11:00 AM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #1A<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time4" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>11:00 AM - 12:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #2A<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time5" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>12:00 PM - 1:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #3A<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time6" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>1:00 PM - 2:00 PM</strong>
-                    <div class="lecture-icon-wrapper">
-                      <span class="fa fa-cutlery"></span>
-                    </div>
-                    <h6 class="title">Lunchtime<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>2:00 PM - 3:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #4A<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>3:00 PM - 4:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #5A<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>4:00 PM - 5:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #6A<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>5:00 PM - 6:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #7A<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-              </div>
-              <!-- Accordion end -->
-
-            </div>
-            <!-- Track 1 content end -->
-
-            <!-- Track 2 content start -->
-            <div id="track2" class="tab-pane fade in">
-
-              <!-- Accordion start -->
-              <div class="panel-group" id="track2_timeline">
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time1" class="schedule-item-toggle">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>9:00 AM - 9:30 AM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Registration <i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time2" class="schedule-item-toggle">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>9:30 AM - 10:00 AM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Introduction & Keynote <i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time3" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 11:00 AM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #1B<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time4" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>11:00 AM - 12:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #2B<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time5" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>12:00 PM - 1:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #3B<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time6" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>1:00 PM - 2:00 PM</strong>
-                    <div class="lecture-icon-wrapper">
-                      <span class="fa fa-cutlery"></span>
-                    </div>
-                    <h6 class="title">Lunchtime<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>2:00 PM - 3:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #4B<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>3:00 PM - 4:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #5B<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>4:00 PM - 5:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #6B<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-                <!-- Lecture start -->
-                <div class="panel schedule-item">
-                  <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
-                    <strong class="time highlight"><span class="icon icon-office-24"></span>5:00 PM - 6:00 PM</strong>
-                    <div class="lecture-icon-wrapper"></div>
-                    <h6 class="title">Speaking Slot #7B<i class="icon icon-arrows-06"></i></h6>
-                  </a>
-                </div>
-                <!-- Lecture end -->
-
-              </div>
-              <!-- Accordion end -->
-
-            </div>
-            <!-- Track 2 content end -->
-
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="package-column special-column">
+          <h6 class="package-title">Super Early Birds</h6>
+          <div class="package-price">
+            <span class="currency">RM</span>35
           </div>
-          <!-- First level content end -->
-
-        </div>
-        <!-- Schedule end -->
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section id="tickets" class="section align-center">
-    <div class="container">
-      <span class="icon section-icon icon-shopping-04"></span>
-      <h3>Tickets</h3>
-      <p class="text-alt">Get yours while they're still <span class="highlight">available</span></p>
-      <br/>
-      <br/>
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="package-column special-column">
-            <h6 class="package-title">Super Early Birds</h6>
-            <div class="package-price">
-              <span class="currency">RM</span>35
-            </div>
-            <div class="package-detail">
-              First 30 Attendees
-            </div>
-            <a href="#" class="btn btn-lg">Buy now</a>
+          <div class="package-detail">
+            First 30 Attendees
           </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="package-column">
-            <h6 class="package-title">Early Birds</h6>
-            <div class="package-price">
-              <span class="currency">RM</span>45
-            </div>
-            <div class="package-detail">
-              Next 50 Attendees
-            </div>
-            <a href="#" class="btn btn-lg btn-outline-clr">Buy now</a>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="package-column">
-            <h6 class="package-title">Late Birds</h6>
-            <div class="package-price">
-              <span class="currency">RM</span>60
-            </div>
-            <div class="package-detail">
-              You snooze you lose ...
-            </div>
-            <a href="#" class="btn btn-lg btn-outline-clr">Buy now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="code-of-conduct" class="section overlay overlay-clr bg-cover light-text align-center">
-    <div class="container">
-      <h2>Code of Conduct</h2>
-      <p>
-        All attendees, speakers, sponsors and volunteers at our conference are required to agree with our code of conduct.<br />
-        Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
-      </p>
-      <br />
-      <br />
-
-      <a href="code-of-conduct.html" class="btn btn-lg btn-outline">Code of Conduct</a>
-    </div>
-  </section>
-
-  <section id="sponsors" class="section align-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 align-center">
-          <span class="icon section-icon icon-documents-bookmarks-12"></span>
-          <h3>Event Sponsors</h3>
-          <p class="text-alt">companies that <span class="highlight">supports</span> us</p>
-          <br/>
-          <br/>
-        </div>
-        <div class="col-sm-12 align-center">
-          <a href="sponsorship-deck.html" target="_blank" class="btn btn-outline-clr btn-md">BE A SPONSOR</a>
-        </div>
-      </div>
-      <div class="cleafix"><br /><br /></div>
-      <div class="row">
-        <div class="col-sm-12 align-center">
-          <h3>Event Partners</h3>
-          <p class="text-alt">our <span class="highlight">partners</span> for the event</p>
-          <br/>
-          <br/>
-
-          <div class="sponsors">
-            <div class="sponsor inline"><a href="http://makespace.my" target="_blank"><img src="assets/img/sponsors/makespace.png" alt="Makespace"></a></div>
-            <div class="sponsor inline"><a href="http://rrsoft.co" target="_blank"><img src="assets/img/sponsors/rrsoft.jpg" alt="Rapid River Software"></a></div>
-          </div>
+          <a href="#" class="btn btn-lg">Buy now</a>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="col-sm-4">
+        <div class="package-column">
+          <h6 class="package-title">Early Birds</h6>
+          <div class="package-price">
+            <span class="currency">RM</span>45
+          </div>
+          <div class="package-detail">
+            Next 50 Attendees
+          </div>
+          <a href="#" class="btn btn-lg btn-outline-clr">Buy now</a>
+        </div>
+      </div>
 
-  <section id="location">
-    <div class="contacts-wrapper">
-      <div id="contacts-map" class="map" data-settings="map-settings.json" style="height:560px;"></div>
-
-      <div class="container contacts-on-map-container">
-        <div class="contacts-on-map">
-          <h3>Location</h3>
-
-          <ul class="list">
-            <li>
-              <i class="fa fa-map-marker" style="height:90px"></i>
-              <div style="display: inline-block">
-                <strong>Makespace</strong><br />
-                LG16, Quill City Mall<br />
-                1018, Jalan Sultan Ismail<br />
-                50250 Kuala Lumpur
-              </div>
-            </li>
-            <li><i class="fa fa-envelope"></i>klrubybrigade@gmail.com</li>
-          </ul>
+      <div class="col-sm-4">
+        <div class="package-column">
+          <h6 class="package-title">Late Birds</h6>
+          <div class="package-price">
+            <span class="currency">RM</span>60
+          </div>
+          <div class="package-detail">
+            You snooze you lose ...
+          </div>
+          <a href="#" class="btn btn-lg btn-outline-clr">Buy now</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="footer">
+<section id="code-of-conduct" class="section overlay overlay-clr bg-cover light-text align-center">
+  <div class="container">
+    <h2>Code of Conduct</h2>
+    <p>
+      All attendees, speakers, sponsors and volunteers at our conference are required to agree with our code of conduct.<br />
+      Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
+    </p>
+    <br />
+    <br />
 
-    <div class="footer-base">
-      <div class="container">
+    <a href="/code-of-conduct" class="btn btn-lg btn-outline">Code of Conduct</a>
+  </div>
+</section>
 
-        <div class="col-md-6">
-          <ul class="footer-nav">
-            <li class="footer-nav-item"><a href="code-of-conduct.html">Code of Conduct</a></li>
-            <li class="footer-nav-item"><a href="privacy.html">Privacy policy</a></li>
-            <li class="footer-nav-item"><a href="sponsors-deck.html">Sponsorship</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-6 align-right">
-          <ul class="socials-nav align-right">
-            <li class="socials-nav-item"><a href="https://twitter.com/klxrb"><span class="fa fa-twitter"></span></a></li>
-            <li class="socials-nav-item"><a href="https://facebook.com/groups/klxrb"><span class="fa fa-facebook"></span></a></li>
-            <li class="socials-nav-item"><a href="https://github.com/rubyconfmy"><span class="fa fa-github"></span></a></li>
-          </ul>
-
-          <p class="text-alt"><small>All Rights Reserved © 2016</small></p>
-        </div>
-
+<section id="sponsors" class="section align-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 align-center">
+        <span class="icon section-icon icon-documents-bookmarks-12"></span>
+        <h3>Event Sponsors</h3>
+        <p class="text-alt">companies that <span class="highlight">supports</span> us</p>
+        <br/>
+        <br/>
+      </div>
+      <div class="col-sm-12 align-center">
+        <a href="/sponsorship" target="_blank" class="btn btn-outline-clr btn-md">BE A SPONSOR</a>
       </div>
     </div>
-  </section>
+    <div class="cleafix"><br /><br /></div>
+    <div class="row">
+      <div class="col-sm-12 align-center">
+        <h3>Event Partners</h3>
+        <p class="text-alt">our <span class="highlight">partners</span> for the event</p>
+        <br/>
+        <br/>
 
+        <div class="sponsors">
+          <div class="sponsor inline"><a href="http://makespace.my" target="_blank"><img src="assets/img/sponsors/makespace.png" alt="Makespace"></a></div>
+          <div class="sponsor inline"><a href="http://rrsoft.co" target="_blank"><img src="assets/img/sponsors/rrsoft.jpg" alt="Rapid River Software"></a></div>
+        </div>
+      </div>
+    </div>
 
-  <!--[if lt IE 9]>
-  <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
-  <![endif]-->
-  <!--[if (gte IE 9) | (!IE)]><!-->
-  <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js?ver=1"></script>
-  <!--<![endif]-->
+  </div>
+</section>
 
-  <script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-  <script type="text/javascript" src="assets/js/toastr.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
-  <script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
-  <script type="text/javascript" src="assets/js/modal-box.js"></script>
-  <script type="text/javascript" src="assets/js/ventcamp.js"></script>
-</body>
-</html>
+<section id="location">
+  <div class="contacts-wrapper">
+    <div id="contacts-map" class="map" data-settings="map-settings.json" style="height:560px;"></div>
+
+    <div class="container contacts-on-map-container">
+      <div class="contacts-on-map">
+        <h3>Location</h3>
+
+        <ul class="list">
+          <li>
+            <i class="fa fa-map-marker" style="height:90px"></i>
+            <div style="display: inline-block">
+              <strong>Makespace</strong><br />
+              LG16, Quill City Mall<br />
+              1018, Jalan Sultan Ismail<br />
+              50250 Kuala Lumpur
+            </div>
+          </li>
+          <li><i class="fa fa-envelope"></i>klrubybrigade@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

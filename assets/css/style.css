@@ -7207,3 +7207,39 @@ button[type="submit"] .loading {
 .footer {
   padding-top: 0;
 }
+
+.schedule.schedule-light .nav.nav-schedule > li {
+  background-color: #fff;
+}
+
+.schedule.schedule-light .nav.nav-schedule > li a,
+.schedule.schedule-light .nav.nav-schedule > li.active a:focus,
+.schedule.schedule-light .nav.nav-schedule > li.active a:hover {
+  color: #fe4918;
+}
+
+.schedule.schedule-light .nav.nav-schedule > li.active {
+  background-color: #fe4918;
+}
+
+.schedule.schedule-light .nav.nav-schedule > li.active a,
+.schedule.schedule-light .nav.nav-schedule > li.active a:focus,
+.schedule.schedule-light .nav.nav-schedule > li.active a:hover {
+  color: #fff;
+}
+.schedule.schedule-light .nav.nav-schedule > li.active div.arrow:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #fe4918 transparent transparent transparent;
+  left: 50%;
+  margin-left: -10px;
+}
+
+h4 {
+  font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
