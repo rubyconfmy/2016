@@ -903,7 +903,7 @@ Ventcamp = {
                         $item = $('.navigation-list a').filter(function () {
                             return this.href.indexOf('#' + that.id) > -1;
                         });
-
+                    console.log(id, 'enter')
                     $('.navigation-list .active').removeClass('active');
                     $item.addClass('active');
 
@@ -920,7 +920,7 @@ Ventcamp = {
                     var $item = $('.navigation-list a').filter(function () {
                             return this.href.indexOf('#' + that.id) > -1;
                         });
-
+                    console.log(that.id, 'leave')
                     $item.removeClass('active');
                 };
 
@@ -933,25 +933,23 @@ Ventcamp = {
                     $block.waypoint(function (direction) {
                         if ( direction == 'down' ) {
                             enterHandler( this.element, direction );
+                        } else {
+                            leaveHandler( this.element, direction );
                         }
-
-                    }, { offset: 0 });
+                    }, { offset: $('.header.fixed .header-wrapper').outerHeight() });
 
                     $block.waypoint(function (direction) {
                         if ( direction == 'down' ) {
                             leaveHandler( this.element, direction );
-
                         }else {
                             enterHandler( this.element, direction );
                         }
-
-                    }, { offset: -$block.outerHeight() });
+                    }, { offset: -$block.outerHeight() + $('.header.fixed .header-wrapper').outerHeight() });
 
                     $block.waypoint(function (direction) {
                         if ( direction == 'up' ) {
                             leaveHandler( this.element, direction );
                         }
-
                     }, { offset: '100%' });
                 }
             });
