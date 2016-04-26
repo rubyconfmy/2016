@@ -852,7 +852,7 @@ Ventcamp = {
                             $slide = $imgSLider.find('> li').eq(currentIndex);
 
                             height = countImgMinHeight($slide);
-                            console.log(height);
+                            
                         },
 
                         onSlideBefore: function ($slide) {

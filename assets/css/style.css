@@ -6808,10 +6808,12 @@ button[type="submit"] .loading {
 .modal-box *:nth-child(2) {
   margin-top: 0;
 }
+.modal-box.iframe-box.iframe-peatix,
 .modal-box.iframe-box.iframe-video {
   border: none;
   padding-bottom: 35.866%;
 }
+.modal-box.iframe-box.iframe-peatix iframe,
 .modal-box.iframe-box.iframe-video iframe {
   position: absolute;
   top: 0;
