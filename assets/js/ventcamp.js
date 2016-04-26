@@ -579,6 +579,11 @@ Ventcamp = {
 
                 var map, marker, geocoder, service;
 
+                var isMobile = function() {
+                  try{ document.createEvent("TouchEvent"); return true; }
+                  catch(e){ return false; }
+                }();
+
                 var icon = '/assets/img/marker-46x46.png',
                     address,
                     markerLatLng,
@@ -589,7 +594,8 @@ Ventcamp = {
                     mapOptions = {
                         zoom: 14,
                         scrollwheel: false,
-                        mapTypeControl: false
+                        mapTypeControl: false,
+                        draggable: !isMobile
                     };
 
                 function createMap () {
@@ -852,7 +858,7 @@ Ventcamp = {
                             $slide = $imgSLider.find('> li').eq(currentIndex);
 
                             height = countImgMinHeight($slide);
-                            
+
                         },
 
                         onSlideBefore: function ($slide) {
