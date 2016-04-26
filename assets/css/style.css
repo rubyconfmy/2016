@@ -7243,3 +7243,7 @@ h4 {
   font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
+
+#slack_invite #submit_button {
+  margin-left: 0;
+}
