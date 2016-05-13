@@ -2079,7 +2079,7 @@ h2 {
 p,
 article {
   margin: 0 0 10px;
-  line-height: 29px;
+  line-height: 27px;
 }
 p.small,
 article.small {
@@ -5677,9 +5677,13 @@ button[type="submit"] .loading {
   text-align: center;
 }
 .speaker .photo-wrapper {
+  border: 3px solid #fe4918;
   margin: 0 auto 20px;
   display: inline-block;
   max-width: 100%;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 .speaker .photo-wrapper.rounded {
   border-radius: 50%;
@@ -7248,4 +7252,8 @@ h4 {
 
 #slack_invite #submit_button {
   margin-left: 0;
+}
+
+.inspirations.list li {
+  margin: 2px 0;
 }
