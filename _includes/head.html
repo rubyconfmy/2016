@@ -13,6 +13,8 @@
   <meta property="og:type" content="Website" />
   {% if page.desc %}<meta property="og:description" content="{{ page.desc }}" />{% endif %}
   {% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
+  {% for image in page.images %}<meta property="og:image" content="{{ image }}" />
+  {% endfor %}
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-icon-60x60.png">
