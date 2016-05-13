@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <title>Ruby Conference KL 2016</title>
 
-  <meta name="description" content="Official site of RubyConf Malaysia">
+  <meta name="description" content="{% if page.desc %}{{ page.desc }}{% else %}Official site of RubyConf Malaysia{% endif %}" />
   <meta name="keywords" content="ruby, conference, unconference, conf, unconf, malaysia, kuala lumpur, kl">
   <meta name="author" content="RubyConf MY">
 
-  <meta property="og:title" content="RubyConf MY" />
+  <meta property="og:title" content="RubyConf MY{% if page.title %} | {{ page.title }}{% endif %}" />
   <meta property="og:type" content="Website" />
-  <meta property="og:description" content="Official website for RubyConf MY" />
-  <meta property="og:url" content="http://rubyconf.my" />
-  <meta property="og:image" content="http://rubyconf.my/assets/img/logo.png" />
+  {% if page.desc %}<meta property="og:description" content="{{ page.desc }}" />{% endif %}
+  {% if page.image %}<meta property="og:image" content="{{ page.image }}" />{% endif %}
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-icon-60x60.png">
