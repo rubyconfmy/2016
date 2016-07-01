@@ -5738,6 +5738,11 @@ button[type="submit"] .loading {
   border-radius: 50%;
   border: 2px solid;
 }
+
+.speaker p.text-alt {
+  height: 55px;
+}
+
 .speakers.masonry.width720 .masonry-item {
   width: 49.5%;
   padding: 15px 15px;
