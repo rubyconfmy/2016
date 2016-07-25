@@ -240,6 +240,20 @@ image: http://rubyconf.my/assets/img/logo.png
       </div>
       <div class="col-sm-3">
         <div class="speaker">
+          <div class="photo-wrapper rounded"><img src="/assets/img/speakers/min-han.jpg" alt="Min Han" class="img-responsive"></div>
+          <h3 class="name">MYAT MIN HAN</h3>
+          <p class="text-alt"><small>CTO of WeAreRebbiz, <br />Co-founder of MMCarsDB</small></p>
+          <ul class="speaker-socials">
+            <li><a target="_blank" rel="nofollow" href="https://twitter.com/mmhan"><span class="fa fa-twitter"></span></a></li>
+            <li><a target="_blank" rel="nofollow" href="https://github.com/mmhan"><span class="fa fa-github"></span></a></li>
+            <li><a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/mmhan"><span class="fa fa-linkedin"></span></a></li>
+            <li><a target="_blank" rel="nofollow" href="http://mmhan.net"><span class="fa fa-rocket"></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="speaker">
           <div class="photo-wrapper rounded"><img src="/assets/img/speakers/calum-halcrow.jpg" alt="Calum Halcrow" class="img-responsive"></div>
           <h3 class="name">CALUM HALCROW</h3>
           <p class="text-alt"><small>Co-Founder & CTO,<br />Rapid River Software</small></p>
@@ -251,6 +265,10 @@ image: http://rubyconf.my/assets/img/logo.png
           </ul>
         </div>
       </div>
+
+    </div>
+
+    <div class="row" style="text-align: center">
       <div class="col-sm-3">
         <div class="speaker">
           <div class="photo-wrapper rounded"><img src="/assets/img/speakers/tristan-gomez.jpg" alt="Tristan Gomez" class="img-responsive"></div>
@@ -262,10 +280,6 @@ image: http://rubyconf.my/assets/img/logo.png
           </ul>
         </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-3"><br /></div>
       <div class="col-sm-3">
         <div class="speaker">
           <div class="photo-wrapper rounded"><img src="/assets/img/speakers/dhendy.jpg" alt="Dhendy Ferdian" class="img-responsive"></div>
@@ -291,7 +305,6 @@ image: http://rubyconf.my/assets/img/logo.png
           </ul>
         </div>
       </div>
-      <div class="col-sm-3"><br /></div>
     </div>
 
     <div class="col-sm-12 align-center">
@@ -312,181 +325,89 @@ image: http://rubyconf.my/assets/img/logo.png
     <br />
     <br />
 
-    <div class="col-md-10 col-md-offset-1">
+    <!-- Schedule start -->
+    <div class="row schedule">
 
-      <!-- Schedule start -->
-      <div class="row schedule schedule-light">
+      <!-- Navigation by day start -->
+      <ul class="nav nav-schedule">
+        <li class="active"><a href="#track1" data-toggle="tab">Track #1</a><div class="arrow"></div></li>
+        <li><a href="#track2" data-toggle="tab">Track #2</a><div class="arrow"></div></li>
+      </ul>
+      <!-- Navigation by day end -->
 
-        <!-- Navigation by day start -->
-        <ul class="nav nav-schedule">
-          <li class="active"><a href="#track1" data-toggle="tab">Track #1</a><div class="arrow"></div></li>
-          <li><a href="#track2" data-toggle="tab">Track #2</a><div class="arrow"></div></li>
-        </ul>
-        <!-- Navigation by day end -->
+      <!-- First level content start -->
+      <div class="tab-content tab-content-schedule">
 
-        <!-- First level content start -->
-        <div class="tab-content">
-
-          <!-- Track 1 content start -->
-          <div id="track1" class="tab-pane fade active in">
-
-            <!-- Accordion start -->
-            <div class="panel-group" id="track1_timeline">
-
+        <!-- Track 1 content start -->
+        <div id="track1" class="tab-pane fade active in">
+          <!-- Accordion start -->
+          <div class="panel-group" id="track1_timeline">
+            {% for lecture in site.lectures.track1 %}
               <!-- Lecture start -->
               <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time1" class="schedule-item-toggle">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:00 AM - 9:30 AM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Registration <i class="icon icon-arrows-06"></i></h6>
+                <div class="lecture-icon-wrapper">
+                  {% if lecture.icon %}<span class="fa {{ lecture.icon }}"></span>{% endif %}
+                  {% if lecture.portrait_filename %}<img src="/assets/img/speakers/{{ lecture.portrait_filename }}" alt="{{ lecture.speaker }}" class="img-responsive">{% endif %}
+                </div>
+
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time{{ forloop.index }}" class="schedule-item-toggle">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>{{ lecture.time }}</strong>
+                  <h6 class="title">{{ lecture.title }} <i class="icon icon-arrows-06"></i></h6>
                 </a>
+                <div id="track1_timeline_time{{ forloop.index }}" class="panel-collapse collapse schedule-item-body">
+                  <article>
+                    <p class="description">{{ lecture.description }}</p>
+                    {% if lecture.speaker %}<strong class="highlight speaker-name">{{ lecture.speaker }}</strong>{% endif %}
+                  </article>
+                </div>
               </div>
               <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time2" class="schedule-item-toggle">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:30 AM - 10:00 AM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Introduction & Keynote <i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time3" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 1:00 PM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Presentations / Workshops<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time6" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>1:00 PM - 2:00 PM</strong>
-                  <div class="lecture-icon-wrapper">
-                    <span class="fa fa-cutlery"></span>
-                  </div>
-                  <h6 class="title">Lunchtime<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time7" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>2:00 PM - 6:00 PM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Presentations / Workshops<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time8" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>6:00 PM - 6:30 PM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Closing<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-            </div>
-            <!-- Accordion end -->
+            {% endfor %}
 
           </div>
-          <!-- Track 1 content end -->
-
-          <!-- Track 2 content start -->
-          <div id="track2" class="tab-pane fade in">
-
-            <!-- Accordion start -->
-            <div class="panel-group" id="track2_timeline">
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time1" class="schedule-item-toggle">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:00 AM - 9:30 AM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Registration <i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time2" class="schedule-item-toggle">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>9:30 AM - 10:00 AM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Introduction & Keynote <i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time3" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>10:00 AM - 1:00 PM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Presentations / Workshops<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time6" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>1:00 PM - 2:00 PM</strong>
-                  <div class="lecture-icon-wrapper">
-                    <span class="fa fa-cutlery"></span>
-                  </div>
-                  <h6 class="title">Lunchtime<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time7" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>2:00 PM - 6:00 PM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Presentations / Workshops<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-
-              <!-- Lecture start -->
-              <div class="panel schedule-item">
-                <a data-toggle="collapse" data-parent="#track2_timeline" href="#track2_timeline_time8" class="schedule-item-toggle collapsed">
-                  <strong class="time highlight"><span class="icon icon-office-24"></span>6:00 PM - 6:30 PM</strong>
-                  <div class="lecture-icon-wrapper"></div>
-                  <h6 class="title">Closing<i class="icon icon-arrows-06"></i></h6>
-                </a>
-              </div>
-              <!-- Lecture end -->
-
-            </div>
-            <!-- Accordion end -->
-
-          </div>
-          <!-- Track 2 content end -->
+          <!-- Accordion end -->
 
         </div>
-        <!-- First level content end -->
+        <!-- Track 1 content end -->
+
+        <!-- Track 2 content start -->
+        <div id="track2" class="tab-pane fade in">
+
+          <!-- Accordion start -->
+          <div class="panel-group" id="track2_timeline">
+            {% for lecture in site.lectures.track2 %}
+              <!-- Lecture start -->
+              <div class="panel schedule-item">
+                <div class="lecture-icon-wrapper">
+                  {% if lecture.icon %}<span class="fa {{ lecture.icon }}"></span>{% endif %}
+                  {% if lecture.portrait_filename %}<img src="/assets/img/speakers/{{ lecture.portrait_filename }}" alt="{{ lecture.speaker }}" class="img-responsive">{% endif %}
+                </div>
+
+                <a data-toggle="collapse" data-parent="#track1_timeline" href="#track1_timeline_time{{ forloop.index }}" class="schedule-item-toggle">
+                  <strong class="time highlight"><span class="icon icon-office-24"></span>{{ lecture.time }}</strong>
+                  <h6 class="title">{{ lecture.title }} <i class="icon icon-arrows-06"></i></h6>
+                </a>
+                <div id="track1_timeline_time{{ forloop.index }}" class="panel-collapse collapse schedule-item-body">
+                  <article>
+                    <p class="description">{{ lecture.description }}</p>
+                    {% if lecture.speaker %}<strong class="highlight speaker-name">{{ lecture.speaker }}</strong>{% endif %}
+                  </article>
+                </div>
+              </div>
+              <!-- Lecture end -->
+            {% endfor %}
+          </div>
+          <!-- Accordion end -->
+
+        </div>
+        <!-- Track 2 content end -->
 
       </div>
-      <!-- Schedule end -->
+      <!-- First level content end -->
 
-      <br />
-      <br />
-
-      <p>Detailed schedule will be announced around <span class="highlight">end of June</span>. So stay tuned...</p>
     </div>
+    <!-- Schedule end -->
+
 
   </div>
 

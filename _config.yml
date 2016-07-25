@@ -1,2 +1,84 @@
 gems:
   - jekyll-sitemap
+
+lectures:
+  track1:
+    - time: 9:00 AM - 9:30 AM
+      title: Registration
+      icon: fa-bullhorn
+
+    - time: 9:30 AM - 9:45 AM
+      title: Welcome Messages
+      icon: fa-child
+
+    - time: 9:45 AM - 10:25 AM
+      title: Keynote
+      speaker: Nick Marden
+      portrait_filename: nick-marden.jpg
+
+    - time: 10:30 AM - 11:10 AM
+      title: What's your value in the industry, as a Rails developer?
+      speaker: Jason Lim
+      portrait_filename: jason-lim.jpg
+
+    - time: 11:15 AM - 11:55 AM
+      title: How gems are built?
+      speaker: Adam Pahlevi
+      portrait_filename: adam-pahlevi.png
+
+    - time: 12:00 PM - 1:00 PM
+      title: Lunch
+      icon: fa-cutlery
+
+    - time: 1:15 PM - 1:40 PM
+      title: Programming Complexity
+      speaker: Chang Sau Sheong
+      portrait_filename: sau-sheong.jpg
+
+    - time: 1:45 PM - 2:25 PM
+      title: Rails 5 features you have not heard about
+      speaker: Prathamesh Sonpakti
+      portrait_filename: prathamesh-sonpatki.jpeg
+
+    - time: 2:30 PM - 3:10 PM
+      title: TBA
+      speaker: Calum Halcrow
+      portrait_filename: calum-halcrow.jpg
+
+    - time: 3:15 PM - 3:45 PM
+      title: Break
+      icon: fa-coffee
+    - time: 3:50 PM - 4:30 PM
+      title: Life Beyond Rails
+      speaker: Tristan Gomez
+      portrait_filename: tristan-gomez.jpg
+
+    - time: 4:35 PM - 5:15 PM
+      title: ActionCable and WebSockets
+      speaker: Tristan Gomez
+      portrait_filename: lincoln-lee.jpg
+
+    - time: 5:20 PM - 6:00 PM
+      title: Developing with Ruby in a third world country
+      speaker: Myat Min Han
+      portrait_filename: min-han.jpg
+
+    - time: 6:05 PM - 6:15 PM
+      title: Closing
+      icon: fa-hand-spock-o
+
+  track2:
+    - time: 10:30 AM - 11:30 AM
+      title: "Workshop: Rebuilding Rails - Getting to know Rails internal"
+      speaker: Dhendy Ferdian
+      portrait_filename: dhendy.jpg
+
+    - time: 1:00 PM - 2:00 PM
+      title: "Workshop: Deploy rails app on your own server using passenger"
+      speaker: Axel Kee
+      portrait_filename: axel-kee.jpg
+
+    - time: 2:00 PM - 3:00 PM
+      title: "Workshop: Component-based web development using Rails and React"
+      speaker: Adam Pahlevi
+      portrait_filename: adam-pahlevi.png
