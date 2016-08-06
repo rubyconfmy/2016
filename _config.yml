@@ -41,7 +41,7 @@ lectures:
       portrait_filename: prathamesh-sonpatki.jpeg
 
     - time: 2:30 PM - 3:10 PM
-      title: TBA
+      title: Metaprogramming with Ruby
       speaker: Calum Halcrow
       portrait_filename: calum-halcrow.jpg
 
@@ -74,7 +74,7 @@ lectures:
       portrait_filename: dhendy.jpg
 
     - time: 1:00 PM - 2:00 PM
-      title: "Workshop: Deploy rails app on your own server using passenger"
+      title: "Workshop: Deploy rails app on your own server using Unicorn"
       speaker: Axel Kee
       portrait_filename: axel-kee.jpg
 
