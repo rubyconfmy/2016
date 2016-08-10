@@ -72,13 +72,16 @@ lectures:
       title: "Workshop: Rebuilding Rails - Getting to know Rails internal"
       speaker: Dhendy Ferdian
       portrait_filename: dhendy.jpg
+      description: Basic Rails knowledge required.
 
     - time: 1:00 PM - 2:00 PM
       title: "Workshop: Deploy rails app on your own server using Unicorn"
       speaker: Axel Kee
       portrait_filename: axel-kee.jpg
+      description: Digital Ocean or similar VPS required.
 
     - time: 2:00 PM - 3:00 PM
       title: "Workshop: Component-based web development using Rails and React"
       speaker: Adam Pahlevi
       portrait_filename: adam-pahlevi.png
+      description: Basic Rails and Javascript knowledge required.
