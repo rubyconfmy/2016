@@ -7278,3 +7278,7 @@ h4 {
 .inspirations.list li {
   margin: 2px 0;
 }
+
+#photo-gallery-placeholder {
+  cursor: pointer;
+}

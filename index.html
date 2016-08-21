@@ -16,7 +16,7 @@ image: http://rubyconf.my/assets/img/logo.png
       <h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>13.aug 2016 <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>Makespace, Quill City Mall</h5>
       <h1 class="extra-heading">RubyConf KL</h1>
 
-      
+
     </div>
   </div>
 </section>
@@ -356,60 +356,6 @@ image: http://rubyconf.my/assets/img/logo.png
 
 </section>
 
-
-<section id="tickets" class="section align-center">
-  <div class="container">
-    <span class="icon section-icon icon-shopping-04"></span>
-    <h3>Tickets</h3>
-    <p class="text-alt">Get yours while they're still <span class="highlight">available</span></p>
-    <br/>
-    <br/>
-
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="package-column">
-          <h6 class="package-title">Super Early Birds</h6>
-          <div class="package-price">
-            <span class="currency">RM</span>35
-          </div>
-          <div class="package-detail">
-            <br />
-          </div>
-          <a href="#" onclick="return false;" class="btn btn-lg btn-black">Sold Out</a>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="package-column">
-          <h6 class="package-title">Early Birds</h6>
-          <div class="package-price">
-            <span class="currency">RM</span>45
-          </div>
-          <div class="package-detail">
-            <br />
-          </div>
-          <a href="#" onclick="return false;" class="btn btn-lg btn-black">Sold Out</a>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <div class="package-column">
-          <h6 class="package-title">Normal</h6>
-          <div class="package-price">
-            <span class="currency">RM</span>60
-          </div>
-          <div class="package-detail">
-            <br />
-          </div>
-          <a href="#" onclick="return false;" class="btn btn-lg btn-black">Sold Out</a>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
 <section id="code-of-conduct" class="section overlay overlay-clr bg-cover light-text align-center">
   <div class="container">
     <h2>Code of Conduct</h2>
@@ -469,6 +415,36 @@ image: http://rubyconf.my/assets/img/logo.png
 
   </div>
 </section>
+
+
+<section id="photos" class="section align-center">
+  <div class="container">
+    <span class="icon section-icon icon-office-37"></span>
+    <h3>Event Photos</h3>
+
+    <div class="gallery masonry">
+      {% for image in site.event-photos %}
+        <span class="masonry-item">
+          <a href="#" class="gallery-thumb-link" data-modal-link="gallery-{{ forloop.index }}">
+            <img src="/assets/img/event-photos/resized/{{ image.filename }}" alt="">
+          </a>
+
+          <div class="modal-window" data-modal="gallery-{{ forloop.index }}">
+            <div class="modal-box medium animated" data-animation="zoomIn" data-duration="700">
+              <span class="close-btn icon icon-office-52"></span>
+
+              <h5 class="heading-alt">Photo {{ forloop.index }}</h5>
+              <br/>
+
+              <img src="/assets/img/event-photos/{{ image.filename }}" class="full-width-img" alt="photo-{{ forloop.index }}">
+            </div>
+          </div>
+        </span>
+      {% endfor %}
+    </div>
+
+</section>
+
 
 <section id="location">
   <div class="contacts-wrapper">
