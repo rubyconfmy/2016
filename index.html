@@ -423,7 +423,7 @@ image: http://rubyconf.my/assets/img/logo.png
     <h3>Event Photos</h3>
 
     <div class="gallery masonry">
-      {% for image in site.event-photos %}
+      {% for image in site.event-photos-preview %}
         <span class="masonry-item">
           <a href="#" class="gallery-thumb-link" data-modal-link="gallery-{{ forloop.index }}">
             <img src="/assets/img/event-photos/resized/{{ image.filename }}" alt="">
@@ -436,11 +436,19 @@ image: http://rubyconf.my/assets/img/logo.png
               <h5 class="heading-alt">Photo {{ forloop.index }}</h5>
               <br/>
 
-              <img src="/assets/img/event-photos/{{ image.filename }}" class="full-width-img" alt="photo-{{ forloop.index }}">
+              <img src="/assets/img/event-photos/resized/{{ image.filename }}" class="full-width-img" alt="photo-{{ forloop.index }}">
             </div>
           </div>
         </span>
       {% endfor %}
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="col-sm-12 align-center">
+      <a href="/event-photos" class="btn btn-outline-clr btn-md">MORE EVENT PHOTOS</a>
     </div>
 
 </section>

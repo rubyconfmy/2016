@@ -86,6 +86,51 @@ lectures:
       portrait_filename: adam-pahlevi.png
       description: Basic Rails and Javascript knowledge required.
 
+event-photos-preview:
+  - filename: photo-1.jpg
+    width: 1224
+    height: 816
+  - filename: photo-12.jpg
+    width: 1224
+    height: 816
+  - filename: photo-16.jpg
+    width: 816
+    height: 1224
+  - filename: photo-19.jpg
+    width: 1224
+    height: 816
+  - filename: photo-138.jpg
+    width: 816
+    height: 1224
+  - filename: photo-44.jpg
+    width: 816
+    height: 1224
+  - filename: photo-67.jpg
+    width: 816
+    height: 1224
+  - filename: photo-73.jpg
+    width: 816
+    height: 1224
+  - filename: photo-107.jpg
+    width: 816
+    height: 1224
+  - filename: photo-116.jpg
+    width: 1224
+    height: 816
+  - filename: photo-117.jpg
+    width: 1224
+    height: 816
+  - filename: photo-137.jpg
+    width: 1224
+    height: 816
+  - filename: photo-152.jpg
+    width: 1224
+    height: 816
+  - filename: photo-154.jpg
+    width: 1224
+    height: 816
+
+
 event-photos:
   - filename: photo-1.jpg
     width: 1224
