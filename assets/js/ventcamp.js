@@ -909,7 +909,7 @@ Ventcamp = {
                         $item = $('.navigation-list a').filter(function () {
                             return this.href.indexOf('#' + that.id) > -1;
                         });
-                    console.log(id, 'enter')
+                    // console.log(id, 'enter')
                     $('.navigation-list .active').removeClass('active');
                     $item.addClass('active');
 
@@ -926,7 +926,7 @@ Ventcamp = {
                     var $item = $('.navigation-list a').filter(function () {
                             return this.href.indexOf('#' + that.id) > -1;
                         });
-                    console.log(that.id, 'leave')
+                    // console.log(that.id, 'leave')
                     $item.removeClass('active');
                 };
 
