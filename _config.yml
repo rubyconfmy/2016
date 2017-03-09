@@ -1,3 +1,4 @@
+baseurl: "/2016"
 gems:
   - jekyll-sitemap
 

@@ -584,7 +584,7 @@ Ventcamp = {
                   catch(e){ return false; }
                 }();
 
-                var icon = '/assets/img/marker-46x46.png',
+                var icon = '/2016/assets/img/marker-46x46.png',
                     address,
                     markerLatLng,
                     offsetX,
